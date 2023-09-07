@@ -21,6 +21,7 @@
 				id="message"
 				placeholder="Enter a message..."
 				bind:value={message}
+				on:input={vigenere}
 			/>
 			<button
 				class="btn btn-outline-secondary dropdown-toggle"
@@ -29,8 +30,24 @@
 				aria-expanded="false">{encode ? "Encoding" : "Decoding"}</button
 			>
 			<ul class="dropdown-menu">
-				<li><button class="dropdown-item" on:click={() => (encode = true)}>Encoding</button></li>
-				<li><button class="dropdown-item" on:click={() => (encode = false)}>Decoding</button></li>
+				<li>
+					<button
+						class="dropdown-item"
+						on:click={() => {
+							encode = true;
+							vigenere();
+						}}>Encoding</button
+					>
+				</li>
+				<li>
+					<button
+						class="dropdown-item"
+						on:click={() => {
+							encode = false;
+							vigenere();
+						}}>Decoding</button
+					>
+				</li>
 			</ul>
 		</div>
 		<label for="key" class="ps-2">Key</label>
@@ -41,10 +58,8 @@
 				id="key"
 				placeholder="Enter a key..."
 				bind:value={key}
+				on:input={vigenere}
 			/>
-			<button class="btn btn-outline-secondary" type="button" id="button-addon2" on:click={vigenere}
-				>Generate</button
-			>
 		</div>
 
 		<div class="card-footer">

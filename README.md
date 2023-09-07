@@ -1,38 +1,70 @@
-# create-svelte
+# Tauti - Vigenère Cipher Tool
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Tauti is a lightweight desktop application built with Tauri, designed to easily encode and decode text using the Vigenère Cipher.
+Features:
 
-## Creating a project
+- User-friendly UI: Simple and intuitive design, making the encoding and decoding process seamless.
+- Encode: Input your plain text and key to get Vigenère encoded text.
+- Decode: Input your cipher text and key to retrieve the original text.
+- Real-time Preview: See the encoded or decoded text change in real-time as you type.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Table of Contents:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Installation
+- Usage
+- Contributing
+- License
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Installation:
+Prerequisites:
 
-## Developing
+- Ensure you have the latest version of Node.js and Rust installed.
+- Install Tauri CLI globally: npm install -g tauri
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+1. Clone the repository:
 
 ```bash
-npm run build
+git clone https://github.com/yourusername/tauti.git
 ```
 
-You can preview the production build with `npm run preview`.
+2. Navigate to the project directory:
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+cd tauti
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Build the Tauri app:
+
+```bash
+tauri build
+```
+
+5. Navigate to the src-tauri/target/release directory to find the built application. Launch it!
+
+## Usage:
+
+- Open Tauti.
+- Select either "Encode" or "Decode" based on your need.
+- Enter your text in the respective text box.
+- Enter the key for the Vigenère Cipher.
+- View the result in real-time.
+
+## Contributing:
+
+We welcome contributions to Tauti!
+
+- Fork the repository.
+- Create your feature branch (git checkout -b feature/yourFeatureName).
+- Commit your changes (git commit -am 'Add some feature').
+- Push to the branch (git push origin feature/yourFeatureName).
+- Create a new pull request.
+
+## License:
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/nwrenger/tauti/blob/main/LICENSE) file for more details.
