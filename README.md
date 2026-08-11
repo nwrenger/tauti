@@ -16,6 +16,7 @@ Features:
 - License
 
 ## Installation:
+
 Prerequisites:
 
 - Ensure you have the latest version of Node.js and Rust installed.
@@ -67,4 +68,4 @@ We welcome contributions to Tauti!
 
 ## License:
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/nwrenger/tauti/blob/main/LICENSE) file for more details.
+This project is licensed under the **GPLv3 License**. See [LICENSE](./LICENSE) for details.
